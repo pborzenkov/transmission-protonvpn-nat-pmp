@@ -1,0 +1,40 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+      - name: Install nix
+        uses: DeterminateSystems/nix-installer-action@v9
+      - name: Install cachix
+        uses: cachix/cachix-action@v13
+        with:
+          name: nix-community
+      - name: Setup nix cache
+        uses: DeterminateSystems/magic-nix-cache-action@v2
+      - name: Setup go cache
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: gomod2nix
+        run: |
+          nix develop --command gomod2nix
+          git diff --exit-code gomod2nix.toml
+      - name: gofmt
+        run: nix develop --command bash -c 'if [ "$(gofmt -s -l . | wc -l)" -gt 0 ]; then exit 1; fi'
+      - name: go vet
+        run: nix develop --command go vet ./...
+      - name: revive
+        run: nix develop --command revive -set_exit_status ./...
+      - name: staticcheck
+        run: nix develop --command staticcheck ./...
+      - name: go test
+        run: nix develop --command go test ./...
+      - name: nix build
+        run: nix build

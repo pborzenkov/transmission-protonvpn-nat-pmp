@@ -1,0 +1,9 @@
+schema = 3
+
+[mod]
+  [mod."github.com/jackpal/go-nat-pmp"]
+    version = "v1.0.2"
+    hash = "sha256-L1D4Yoxnzihs795GZ+Q3AZsFP5c4iqyjTeyrudzPXtw="
+  [mod."github.com/pborzenkov/go-transmission"]
+    version = "v0.2.0"
+    hash = "sha256-QwqrCzw0+JRMBEMVytnuN9IVwJijlZZvf+wjD1fWepk="
