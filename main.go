@@ -1,3 +1,4 @@
+// Package main implements transmission-protonvpn-nat-pmp
 package main
 
 import (
