@@ -13,7 +13,7 @@ jobs:
       - name: Install nix
         uses: DeterminateSystems/nix-installer-action@v9
       - name: Install cachix
-        uses: cachix/cachix-action@v13
+        uses: cachix/cachix-action@v14
         with:
           name: nix-community
       - name: Setup nix cache
