@@ -17,7 +17,7 @@ jobs:
         with:
           name: nix-community
       - name: Setup nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@v3
+        uses: DeterminateSystems/magic-nix-cache-action@v4
       - name: Setup go cache
         uses: actions/setup-go@v5
         with:
