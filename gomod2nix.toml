@@ -5,5 +5,5 @@ schema = 3
     version = "v1.0.2"
     hash = "sha256-L1D4Yoxnzihs795GZ+Q3AZsFP5c4iqyjTeyrudzPXtw="
   [mod."github.com/pborzenkov/go-transmission"]
-    version = "v0.2.0"
-    hash = "sha256-QwqrCzw0+JRMBEMVytnuN9IVwJijlZZvf+wjD1fWepk="
+    version = "v0.3.0"
+    hash = "sha256-H322j/K6hOILzqfcX7qw0ENBVAwo84oQk8AggdkXjVw="
