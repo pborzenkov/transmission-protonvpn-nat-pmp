@@ -1,6 +1,6 @@
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/jackpal/go-nat-pmp v1.0.2 h1:KzKSgb7qkJvOUTqYl9/Hg/me3pWgBmERKrTGD7BdWus=
-github.com/jackpal/go-nat-pmp v1.0.2/go.mod h1:QPH045xvCAeXUZOxsnwmrtiCoxIr9eob+4orBN1SBKc=
+github.com/jackpal/go-nat-pmp v1.1.0 h1:UInMLPV1VQdP860ggNiz0YxGvJH/bWzxL099y+1EdCs=
+github.com/jackpal/go-nat-pmp v1.1.0/go.mod h1:m9o4DK1wHA4h2pPpErD5vwzWLf91tJcfNQ3QyUIbh5A=
 github.com/pborzenkov/go-transmission v0.3.0 h1:9/+SsnoFlM7RELZFZ47uIvskuF1mAMKFe94EpVhvhO4=
 github.com/pborzenkov/go-transmission v0.3.0/go.mod h1:97tHxcC2s4aKlzVzthfw76NWwRBwKH76qe8rc4DXl4g=
